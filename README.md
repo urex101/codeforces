@@ -43,8 +43,8 @@ standalone script. Run it, feed it the sample input from the problem statement, 
 | [706B - Interesting Drink](https://codeforces.com/problemset/problem/706/B) | [B.InterestingDrink.py](B.InterestingDrink.py) | Sort the prices once, then `bisect_right` counts how many shops each day's budget can afford. |
 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | [A.BearAndBigBrother.py](A.BearAndBigBrother.py) | Simulate year by year (Limak triples, Bob doubles) until Limak is heavier. |
 | [1374C - Move Brackets](https://codeforces.com/problemset/problem/1374/C) | [C.MoveBrackets.py](C.MoveBrackets.py) | Track the bracket balance from left to right; every `)` that would push it below 0 has to be moved, so count those. |
-| [2283A - Numbers on the Board](https://codeforces.com/problemset/problem/2283/A) | [A.NumbersOnTheBoard.py](A.NumbersOnTheBoard.py) | Numbers that cancel out (`x` and `-x`, or 0) can stay, along with one extra number that then equals the board's sum; erase everything else. |
-| [2283B - Rhythmic String](https://codeforces.com/problemset/problem/2283/B) | [B.RhythmicString.py](B.RhythmicString.py) | For each distinct value, count the elements not divisible by it; the answer is the smallest count. |
+| [2283A - Numbers on the Board](https://codeforces.com/problemset/problem/2283/A) | [A.NumbersOnTheBoard.py](Educational%20Codeforces%20Round%20196%20%28Rated%20for%20Div.%202%29/A.NumbersOnTheBoard.py) | Numbers that cancel out (`x` and `-x`, or 0) can stay, along with one extra number that then equals the board's sum; erase everything else. |
+| [2283B - Rhythmic String](https://codeforces.com/problemset/problem/2283/B) | [B.RhythmicString.py](Educational%20Codeforces%20Round%20196%20%28Rated%20for%20Div.%202%29/B.RhythmicString.py) | For each distinct value, count the elements not divisible by it; the answer is the smallest count. |
 
 Most of these are A problems, the first and easiest problem in a round, focused on parsing input correctly and
 translating a statement into a couple of conditions. The B and C problems ask for a little more: a greedy choice (Taxi,
@@ -79,5 +79,8 @@ Python 3.x. No external dependencies; everything uses the standard library only.
 
 Every solution is a single file named `<problem letter>.<ProblemName>.py`, for example `A.Team.py` for 231A Team or
 `B.Taxi.py` for 158B Taxi. The table above maps each file to its problem.
+
+Solutions written during a contest go in a folder named after that contest, for example
+`Educational Codeforces Round 196 (Rated for Div. 2)/`.
 
 New solutions get added as I work through more of the problemset.
