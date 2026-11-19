@@ -12,6 +12,7 @@ standalone script. Run it, feed it the sample input from the problem statement, 
 | --- | --- | --- |
 | [1A - Theatre Square](https://codeforces.com/problemset/problem/1/A) | [A.TheatreSquare.py](A.TheatreSquare.py) | Each side needs `ceil(n / a)` and `ceil(m / a)` flagstones; multiply the two. |
 | [4A - Watermelon](https://codeforces.com/problemset/problem/4/A) | [A.Watermelon.py](A.Watermelon.py) | A weight splits into two even parts iff it is even and greater than 2. |
+| [41A - Translation](https://codeforces.com/problemset/problem/41/A) | [A.Translation.py](A.Translation.py) | The second word has to be the first word written backwards. |
 | [43A - Football](https://codeforces.com/problemset/problem/43/A) | [A.Football.py](A.Football.py) | Count the goals for each team in a dict and print the team with the most. |
 | [50A - Domino piling](https://codeforces.com/problemset/problem/50/A) | [A.DominoPiling.py](A.DominoPiling.py) | Every domino covers 2 squares, so the answer is the board's area divided by 2, rounded down. |
 | [58A - Chatroom](https://codeforces.com/problemset/problem/58/A) | [A.Chatroom.py](A.Chatroom.py) | "hello" has to appear as a subsequence, which the regex `h.*e.*l.*l.*o` checks directly. |
@@ -38,6 +39,7 @@ standalone script. Run it, feed it the sample input from the problem statement, 
 | [363B - Fence](https://codeforces.com/problemset/problem/363/B) | [B.Fence.py](B.Fence.py) | Slide a window of `k` planks along the fence, updating the sum as it moves, and keep the position with the smallest sum. |
 | [456A - Laptops](https://codeforces.com/problemset/problem/456/A) | [A.Laptops.py](A.Laptops.py) | Prices and qualities are both permutations of 1 to n, so Alex is only wrong when every laptop has the same quality-to-price ratio. |
 | [479A - Expression](https://codeforces.com/problemset/problem/479/A) | [A.Expression.py](A.Expression.py) | All values are 1 to 10, so the best expression depends on where the 1s are: add a 1 to its neighbor before multiplying, otherwise multiply everything. |
+| [510A - Fox And Snake](https://codeforces.com/problemset/problem/510/A) | [A.FoxAndSnake.py](A.FoxAndSnake.py) | Every other row is all `#`; the rows in between have a single `#` that alternates between the right end and the left end. |
 | [546A - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A) | [A.SoldierAndBananas.py](A.SoldierAndBananas.py) | The i-th banana costs `i * k`; add up the cost of `w` bananas and borrow whatever goes over `n`, or 0. |
 | [579A - Raising Bacteria](https://codeforces.com/problemset/problem/579/A) | [A.RaisingBacteria.py](A.RaisingBacteria.py) | Repeatedly take away the largest power of 2 that fits; the answer is the number of 1 bits in x. |
 | [617A - Elephant](https://codeforces.com/problemset/problem/617/A) | [A.Elephant.py](A.Elephant.py) | Move 5 steps at a time, so the answer is `ceil(x / 5)`. |
@@ -46,6 +48,7 @@ standalone script. Run it, feed it the sample input from the problem statement, 
 | [791A - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | [A.BearAndBigBrother.py](A.BearAndBigBrother.py) | Simulate year by year (Limak triples, Bob doubles) until Limak is heavier. |
 | [977A - Wrong Subtraction](https://codeforces.com/problemset/problem/977/A) | [A.WrongSubtraction.py](A.WrongSubtraction.py) | Simulate the subtractions directly: drop a trailing 0, otherwise subtract 1, `k` times. |
 | [1374C - Move Brackets](https://codeforces.com/problemset/problem/1374/C) | [C.MoveBrackets.py](C.MoveBrackets.py) | Track the bracket balance from left to right; every `)` that would push it below 0 has to be moved, so count those. |
+| [1742A - Sum](https://codeforces.com/problemset/problem/1742/A) | [A.Sum.py](A.Sum.py) | Check whether any one of the three numbers is the sum of the other two. |
 | [2268A - K Is Important](https://codeforces.com/problemset/problem/2268/A) | [A.KIsImportant.py](A.KIsImportant.py) | While at least `k` numbers are left, compare the `k`-th number from the left with the `k`-th from the right, add the larger one to the score and remove it. |
 | [2276A - Perfect Sandwiches](https://codeforces.com/problemset/problem/2276/A) | [A.PerfectSandwiches.py](A.PerfectSandwiches.py) | Every sandwich needs at least one slice of sausage and more cheese than sausage, so the answer is `min(b, a - b)`, or -1 when `b >= a`. |
 | [2278A - Fraction and Six](https://codeforces.com/problemset/problem/2278/A) | [A.FractionAndSix.py](A.FractionAndSix.py) | The numerator must hold every letter of the denominator plus exactly one extra `s`, `i` and `x`, and nothing else. |
